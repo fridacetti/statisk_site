@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.category_list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+}
+a {
+  display: flex;
+  background-color: rgb(201, 151, 255);
+  text-decoration: none;
+  color: white;
+  padding: 30px;
+  border-radius: 3px;
+  font-size: 18px;
+}
