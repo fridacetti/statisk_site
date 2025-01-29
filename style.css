@@ -146,12 +146,23 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
   }
+  .produktside {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr;
+  }
 }
 
 @media (max-width: 700px) {
   .product_list_container {
     display: grid;
     grid-template-columns: 1fr 1fr;
+  }
+  .produktside {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+  }
+  .more-info {
+    margin-inline: auto;
   }
 }
 @media (max-width: 500px) {
@@ -162,5 +173,9 @@
   }
   .pic {
     height: 400px;
+  }
+  .produktside {
+    display: grid;
+    grid-template-columns: 1fr;
   }
 }
