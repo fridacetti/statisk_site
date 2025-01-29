@@ -29,6 +29,9 @@
   gap: 10px;
   margin-inline: 50px;
 }
+.nike1 {
+  margin-inline: 50px;
+}
 .product_list_container a {
   color: black;
 }
@@ -78,7 +81,63 @@
 /** PRODUKT SIDE**/
 .produktside {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1.5fr 1fr;
+  gap: 20px;
+  align-items: start;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.produkt {
+  height: auto;
+  max-width: 100%;
+}
+
+.produkt_info {
+  padding: 40px;
+  margin-inline: auto;
+}
+
+.produkt_info p {
+  line-height: 30px;
+}
+
+.more-info {
+  background-color: lightgray;
+  padding: 40px;
+  width: 90%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.more-info p {
+  line-height: 35px;
+}
+
+.knap {
+  background-color: white;
+  color: black;
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  margin-top: 20px;
+}
+
+.knap:hover {
+  background-color: #333;
+}
+
+.fed {
+  font-weight: bold;
+  line-height: 10px;
+}
+
+.info_2 {
+  margin-inline: auto;
 }
 
 /**MEDIA**/
