@@ -21,6 +21,8 @@
   padding: 30px;
   border-radius: 3px;
   font-size: 18px;
+  margin-inline: auto;
+  width: 90%;
 }
 .product_list_container {
   display: grid;
