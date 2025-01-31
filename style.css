@@ -4,6 +4,13 @@
   box-sizing: border-box;
 }
 
+.overskrift {
+  margin: 15px;
+}
+
+.nike1 {
+  margin: 15px;
+}
 .logo {
   width: 200px;
   height: 50px;
