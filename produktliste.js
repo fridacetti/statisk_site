@@ -1,5 +1,7 @@
+const mycategory = new URLSearchParams(window.location.search).get("category");
+console.log("produktlise med categories:", mycategory);
 const product_list_container = document.querySelector(".product_list_container");
-fetch(`https://kea-alt-del.dk/t7/api/products?limit=100`)
+fetch(`https://kea-alt-del.dk/t7/api/products?category=${mycategory}`)
   .then((response) => response.json())
   .then((data) => showlist(data));
 
