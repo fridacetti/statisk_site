@@ -18,7 +18,7 @@
 .category_list {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 10px;
+  gap: 15px;
 }
 .category_list a {
   display: flex;
@@ -27,9 +27,12 @@
   color: white;
   padding: 30px;
   border-radius: 3px;
-  font-size: 18px;
+  font-size: 24px;
   margin-inline: auto;
   width: 90%;
+}
+.overskrift {
+  margin: 24px;
 }
 .product_list_container {
   display: grid;
