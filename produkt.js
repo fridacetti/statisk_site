@@ -10,11 +10,11 @@ fetch(`https://kea-alt-del.dk/t7/api/products/${myproduct}`)
             <div class="produkt_info">
                 <h1>Product Information</h1>
                 <div>
-                    <p class="fed"> Model name</p>
+                    <h3 class="fed"> Model name</h3>
                     <p> ${data.productdisplayname}</p>
-                    <p class="fed">Color</p>
+                    <h3 class="fed">Color</h3>
                     <p>${data.basecolour}</p>
-                    <p class="fed">Inventory number</p>
+                    <h3 class="fed">Inventory number</h3>
                     <p>${data.id}</p>
                 </div>
                 <div class="info_2">
@@ -26,9 +26,20 @@ fetch(`https://kea-alt-del.dk/t7/api/products/${myproduct}`)
                 <h1>${data.productdisplayname}</h1>
                 <p> 
                 ${data.brandname} | ${data.articletype} </p>
-                <p>Choose a size</p>
-                <p class="knap">Add to basket</p>
+                  <label for="size">Vælg størrelse:</label>
+        <select id="size">
+            <option value="S">Small (S)</option>
+            <option value="M">Medium (M)</option>
+            <option value="L">Large (L)</option>
+            <option value="XL">Extra Large (XL)</option>
+        </select>
+        <button id="addToCart">Tilføj til kurv</button>
             </div>
         </div>
         `;
   });
+document.getElementById("addToCart").addEventListener("click", function () {
+  const selectedSize = document.getElementById("size").value;
+  console.log("Valgt størrelse:", selectedSize);
+  alert(`Produkt tilføjet i størrelse ${selectedSize}`);
+});

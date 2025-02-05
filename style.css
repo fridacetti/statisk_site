@@ -91,6 +91,9 @@
 }
 
 .soldout {
+  position: relative;
+}
+.sop {
   filter: grayscale(70);
   margin-inline: auto;
 }
@@ -117,6 +120,10 @@
 
 .produkt_info p {
   line-height: 30px;
+  margin-bottom: 10px;
+}
+.produkt_info h1 {
+  margin-bottom: 20px;
 }
 
 .more-info {
@@ -131,26 +138,9 @@
   line-height: 35px;
 }
 
-.knap {
-  background-color: white;
-  color: black;
-  width: 100%;
-  padding: 12px;
-  border-radius: 8px;
-  text-align: center;
-  font-size: 16px;
-  cursor: pointer;
-  border: none;
-  margin-top: 20px;
-}
-
-.knap:hover {
-  background-color: #333;
-}
-
 .fed {
   font-weight: bold;
-  line-height: 10px;
+  line-height: 30px;
 }
 
 .info_2 {
