@@ -106,6 +106,7 @@
   align-items: start;
   max-width: 1200px;
   margin: auto;
+  margin-top: 45px;
 }
 
 .produkt {
@@ -184,5 +185,6 @@
   .produktside {
     display: grid;
     grid-template-columns: 1fr;
+    margin: 20px;
   }
 }
