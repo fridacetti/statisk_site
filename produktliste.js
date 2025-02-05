@@ -19,7 +19,7 @@ function showlist(products) {
                     </div>`
                : ""
            }
-                <img class="pic" src="https://kea-alt-del.dk/t7/images/webp/640/${product.id}.webp" alt="">
+                <img class="pic ${product.soldout ? "sop" : ""}" src="https://kea-alt-del.dk/t7/images/webp/640/${product.id}.webp" alt="">
                 <h3>${product.productdisplayname}</h3>
                 <p class="line">${product.articletype}</p>
                 <p class="line">${product.category}</p>
