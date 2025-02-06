@@ -53,10 +53,10 @@
   margin-inline: auto;
 }
 .card {
+  position: relative;
   display: grid;
   grid-template-columns: subgrid;
   grid-row: span 7;
-  gap: 15px;
   padding: 20px;
   background-color: lightgray;
 }
@@ -82,7 +82,7 @@
   visibility: visible;
 }
 
-.soldout p {
+.soldout {
   position: absolute;
   z-index: 1;
   background-color: black;
@@ -90,12 +90,8 @@
   padding: 10px;
 }
 
-.soldout {
-  position: relative;
-}
 .sop {
-  filter: grayscale(70);
-  margin-inline: auto;
+  filter: grayscale(90%);
 }
 
 /** PRODUKT SIDE**/
@@ -146,6 +142,9 @@
 
 .info_2 {
   margin-inline: auto;
+}
+.size {
+  padding: 20px;
 }
 
 /**MEDIA**/

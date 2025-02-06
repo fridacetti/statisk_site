@@ -12,20 +12,14 @@ function showlist(products) {
       (product) => ` 
   
           <div class="card">
-           ${
-             product.soldout
-               ? `<div class="soldout">
-                    <p>Sold out</p>
-                    </div>`
-               : ""
-           }
                 <img class="pic ${product.soldout ? "sop" : ""}" src="https://kea-alt-del.dk/t7/images/webp/640/${product.id}.webp" alt="">
                 <h3>${product.productdisplayname}</h3>
                 <p class="line">${product.articletype}</p>
                 <p class="line">${product.category}</p>
+                ${product.soldout ? `<p class="soldout">Sold out</p>` : ""}
                   <div class="rabat-container">
                         <p>DKK ${product.price},-</p>
-                    <p class="rabat ${product.discount ? "isonsale" : ""}">-${product.discount}%</p>
+                    <p class="rabat ${product.discount ? "isonsale" : ""}">-${product.discount}%</p>                   
                 </div>
                 <a href="produkt.html?product=${product.id}">Read more</a>
             </div>
