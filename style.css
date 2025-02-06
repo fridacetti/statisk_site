@@ -143,9 +143,6 @@
 .info_2 {
   margin-inline: auto;
 }
-.size {
-  padding: 20px;
-}
 
 /**MEDIA**/
 @media (max-width: 1000px) {
